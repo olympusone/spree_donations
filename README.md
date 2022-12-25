@@ -1,6 +1,6 @@
 # SpreeDonations
 
-Introduction goes here.
+Orders can be made as donations. Activation can be changed through Store Settings.
 
 ## Installation
 
