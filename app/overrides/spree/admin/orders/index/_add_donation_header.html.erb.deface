@@ -1,0 +1,4 @@
+<!-- insert_top '[data-hook="admin_orders_index_headers"]' -->
+<% if current_store.preferred_accept_donations %>
+    <th><%= Spree.t(:donation) %></th>
+<% end %>

@@ -1,0 +1,14 @@
+<!-- insert_bottom '[data-hook="admin_store_form_fields"]' -->
+<div class="card mb-3">
+  <div class="card-header">
+    <h1 class="card-title mb-0 h5">
+      <%= Spree.t(:accept_donations) %>
+    </h1>
+  </div>
+
+  <div class="card-body">
+    <%= content_tag(:div, preference_field_for(f, "preferred_accept_donations", type: f.object.preference_type(:accept_donations)) +
+                  f.label("preferred_accept_donations", Spree.t(:accept_donations), class: 'form-check-label'),
+                            class: 'form-group mb-0 form-check', id: [f.object.class.to_s.parameterize, 'preference', 'accept_donations'].join('-')) %>
+  </div>
+</div>
