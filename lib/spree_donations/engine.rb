@@ -12,9 +12,6 @@ module SpreeDonations
     config.after_initialize do
       Spree::PermittedAttributes.store_attributes << :preferred_accept_donations
       Spree::PermittedAttributes.checkout_attributes << :donation
-
-      Spree::Api::Dependencies.storefront_store_serializer = 'StoreSerializer'
-      Spree::Api::Dependencies.storefront_cart_serializer = 'CartSerializer'
     end
 
     def self.activate
