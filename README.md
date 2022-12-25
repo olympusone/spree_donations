@@ -1,5 +1,7 @@
 # SpreeDonations
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/b21876e13e5cccc0ed3a/maintainability)](https://codeclimate.com/github/olympusone/spree_donations/maintainability)
+
 Orders can be made as donations. Activation can be changed through Store Settings.
 
 ## Installation
