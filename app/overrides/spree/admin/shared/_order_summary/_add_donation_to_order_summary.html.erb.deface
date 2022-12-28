@@ -1,0 +1,11 @@
+<!-- insert_after 'tr:has(td[data-hook="admin_order_tab_channel_title"])' -->
+<% if current_store.preferred_accept_donations %>
+    <tr>
+        <td data-hook='admin_order_tab_donation_title'>
+            <strong><%= Spree.t(:donation) %>:</strong>
+        </td>
+        <td id='order_donation'>
+            <%= spree_icon('save.svg') if @order.donation? %>
+        </td>
+    </tr>
+<% end %>

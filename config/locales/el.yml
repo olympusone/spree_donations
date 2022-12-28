@@ -2,3 +2,7 @@ el:
   spree:
     accept_donations: Αποδοχή Δωρεάς
     donation: Δωρεά
+    promotion_rule_types:
+      donation:
+        description: Έκπτωση στην Δωρεά
+        name: Δωρεά

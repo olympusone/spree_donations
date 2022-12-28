@@ -2,3 +2,7 @@ en:
   spree:
     accept_donations: Accept Donations
     donation: Donation
+    promotion_rule_types:
+      donation:
+        description: Discount for Donation
+        name: Donation

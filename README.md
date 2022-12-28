@@ -27,6 +27,10 @@ Orders can be made as donations. Activation can be changed through Store Setting
 4. Restart your server
 
   If your server was running, restart it so that it can find the assets properly.
+  
+## Apply discount to the donation
+
+You can add discount or any adjustment to the donation orders simply applying Donation Promotion Rule.
 
 ## Testing
 

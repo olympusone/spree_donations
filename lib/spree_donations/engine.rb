@@ -12,6 +12,8 @@ module SpreeDonations
     config.after_initialize do
       Spree::PermittedAttributes.store_attributes << :preferred_accept_donations
       Spree::PermittedAttributes.checkout_attributes << :donation
+
+      config.spree.promotions.rules << Spree::Promotion::Rules::Donation
     end
 
     def self.activate
