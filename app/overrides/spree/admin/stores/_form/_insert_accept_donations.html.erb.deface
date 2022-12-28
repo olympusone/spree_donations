@@ -2,7 +2,7 @@
 <div class="card mb-3">
   <div class="card-header">
     <h1 class="card-title mb-0 h5">
-      <%= Spree.t(:accept_donations) %>
+      <%= Spree.t(:donation) %>
     </h1>
   </div>
 
