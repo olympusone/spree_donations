@@ -11,7 +11,6 @@ module SpreeDonations
 
     config.after_initialize do
       Spree::PermittedAttributes.store_attributes.push :preferred_accept_donations
-      Spree::PermittedAttributes.checkout_attributes << :donation
 
       config.spree.promotions.rules << Spree::Promotion::Rules::Donation
     end
