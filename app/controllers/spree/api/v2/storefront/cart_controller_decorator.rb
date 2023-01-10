@@ -3,7 +3,7 @@ module Spree::Api::V2::Storefront::CartControllerDecorator
         spree_authorize! :update, spree_current_order, order_token
 
         ActiveRecord::Base.transaction do
-            spree_current_order.update!(donation: true)
+            spree_current_order.update!(donation: true, updated_at: Time.now)
             ::Spree::PromotionHandler::Cart.new(spree_current_order).activate
             spree_current_order.update_with_updater!
         end
@@ -15,7 +15,7 @@ module Spree::Api::V2::Storefront::CartControllerDecorator
         spree_authorize! :update, spree_current_order, order_token
 
         ActiveRecord::Base.transaction do
-            spree_current_order.update!(donation: false)
+            spree_current_order.update!(donation: false, updated_at: Time.now)
             ::Spree::PromotionHandler::Cart.new(spree_current_order).activate
             spree_current_order.update_with_updater!
         end
