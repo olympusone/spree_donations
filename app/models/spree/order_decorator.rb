@@ -1,6 +1,6 @@
 module Spree::OrderDecorator
     def can_add_coupon?
-        super && donation?
+        super && !donation?
     end
 end
 
